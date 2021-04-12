@@ -1,0 +1,311 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*------Responsive Images----*/
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/*-----Utility Class-----*/
+
+.container{
+  width:70vw;
+  margin:40px auto;
+}
+.img-right{
+  float:right;
+  margin:10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+.img-left{
+  float:left;
+  margin:10px 20px 10px 0;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+/* ----------Global Styles ------*/
+
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+header.primary{
+  background-color:#D6C9FC;
+  text-align:center;
+  color:#ffffff;
+  text-shadow: 2px 2px #000000;
+  /*long form*/
+  padding-top: 40px;
+  padding-right:40px;
+  padding-bottom:20px;
+  padding-left:40px; 
+  /*T,R,B,L*/
+  padding: 40px 40px 20px 40px;
+  /* Top/Bottom Right/Left */
+  padding: 20px 40px;
+}
+
+header.primary h1{
+  font-size: 3.2rem;
+  margin:20px 0;
+}
+
+header.primary h1 a{
+  display:block;
+  width:60vw;
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size: 2rem;
+  /* Top | Left/Right | Bottom*/
+  margin:20px auto 40px;
+}
+
+header.primary nav{
+  width:70vw;
+  margin:20px auto;
+  max-width:900px;
+  
+  
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding:0;
+}
+
+header.primary ul li{
+  list-style-type:none;
+  
+}
+
+header.primary nav a:link, header.primary nav a:visited{
+  color:#fff;
+  text-decoration:none;
+  background-color:#000000;
+  background-color: rgba(0,0,0,.4);
+  padding:8px 16px;
+  border-radius: 20px;
+  transition:.5s;
+  
+}
+
+header.primary nav a:hover, header.primary nav a:active{
+  background-color: rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 1px dotted #c0c0c0;
+  padding-bottom: 1.5rem;
+  
+}
+
+#intro h2{
+  color:#D6C9FC;
+  
+}
+#intro p{
+  line-height:1.5;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  /*shorthand*/
+  flex-flow: row space-between;
+  border-bottom:1px dotted #000000;
+  padding-bottom: 2.6rem;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:7em;
+  border-radius: 10px;
+  font-size:9rem;
+  transition:.5s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.4);
+  
+}
+  
+  
+#content .post figure{
+  margin:0;
+}
+
+#content article time, #content article figcaption, #content article footer{
+  font-size: .8rem;
+  text-transform: uppercase;
+  color:#c0c0c0;
+}
+
+#content article img{
+  border-radius:4px;
+}
+
+#content article a:link, #content article a:visited{
+  color:#D6C9FC;
+}
+#content article a:hover, #content article a:active{
+  text-decoration: none;
+}
+
+aside[role="complementary"]{
+  background-color: #172635;
+  color:#fff;
+  padding:2.2rem;
+}
+
+aside .conatiner{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside article.widget{
+  width:40%;
+  
+}
+
+aside a:link, aside a:visited{
+  color:white;
+  display:block;
+  margin-top:20px;
+  
+}
+
+aside footer{
+  display:none;
+  
+}
+
+#colophon{
+  background-color:#D6C9FC;
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#fff;
+  text-align:center;
+  font-size:.8rem;
+  text-transform: uppercase;
+}
+
+#additional-elements h2{
+  color:#D6C9FC;
+  border-bottom:1px dotted #000000;
+}
+
+#additional-element a:link, #additional-elements a:visited{
+  color:#D6C9FC;
+}
+
+#additional-element a:hover, #additional-elements a:active{
+  text-decoration: none;
+}
+
+#addition-elements h3{
+  clear:both;
+  border-left:8px solid #D6C9FC;
+  padding:10px;
+}
+
+table{
+  width:100%;
+  border:1px solid #000000;
+  border-collapse: collapse;
+  margin-bottom:40px;
+}
+
+table td{
+   border:1px solid #000000;
+   padding:5px;
+}
+
+table th{
+  background-color:#D6C9FC;
+  color:#fff;
+  width:33%;
+  padding:10px;
+}
+
+table tr:nth-child(even){
+  background-color: rgba(0,0,0,.1);
+}
+
+table tr:hover{
+  background-color: rgba(0,0,0,.2);
+}
+
+table caption{
+  color:#D6C9FC;
+  padding:10px;
+  font-weight:bold;
+  font-size:1.4rem;
+}
+
+#additional-elements ul{
+  list-style-type: upper-roman;
+}
+
+#additional-elements ul{
+  list-style-type: square;
+}
+
+#additional-elements ul-ul{
+  color:red;
+}
+
+#additional-elements dl{
+  
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:1.2rem;
+  
+}
+
+#additional-elements dd{
+  margin:0;
+}
+/*---Adjacent Sibling Combinator---*/
+
+dd + dt{
+  margin-top:20px;
+}
+
+blockquote{
+  background:rgba(0,0,0,.15);
+  padding:40px 60px;
+  border:5px double #000000;
+  font-size:1.2em;
+}
+
+blockquote cite{
+  display:block;
+  font-size:6rem;
+  font-weight:bold;
+  text-align:right;
+  margin-top:1.5rem;
+}
